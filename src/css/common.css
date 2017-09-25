@@ -1,0 +1,54 @@
+/* 版心 */
+.w {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* 居中类 */
+.center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.center-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 伪元素剧中类 */
+.center-x-pseudo::after,.center-x-pseudo:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-y-pseudo::after,.center-y-pseudo:before  {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.center-xy-pseudo::after,.center-xy-pseudo:before  {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
