@@ -1,9 +1,13 @@
 <template>
     <div>
-        <!-- 头部菜单 -->
-        <header><headerMenu :headerMenuList="headerMenuList"></headerMenu></header>
-        <img src="../../imgs/11.jpg">
-        <router-view></router-view>
+        <!--用于设置背景的盒子-->
+        <div class="main-bg">
+             <!-- 头部菜单 -->
+            <header><headerMenu :headerMenuList="headerMenuList"></headerMenu></header>
+
+            <router-view></router-view>
+
+        </div>
         <!-- 底部信息 -->
         <footerInfo></footerInfo>
     </div>
@@ -33,8 +37,9 @@
 
 
 <style lang="less">
-    img {
-        width: 100%;
+    .main-bg {
+        background:#000 url("../../imgs/main-bg.jpg") no-repeat;
+        background-position: center center;
     }
     @media only screen and (max-width: 680px){
         header {

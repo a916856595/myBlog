@@ -1,6 +1,6 @@
-var path = require("path");
-var htmlWebpackPlugin = require("html-webpack-plugin");
-var webpack = require("webpack");
+const path = require("path");
+const htmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
     entry : path.join(__dirname, "src/main.js"),

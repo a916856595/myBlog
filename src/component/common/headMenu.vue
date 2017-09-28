@@ -67,9 +67,15 @@
 
 
 <style lang="less" scope>
+    @color: rgba(0,0,0,.5);        /* 主题颜色 */
+    @colorHover: rgba(0,0,0,.7);   /* 菜单悬浮时的背景色 */
+    nav {
+        box-shadow: 0 5px 10px #000;
+    }
     @media only screen and (min-width: 681px){
         nav {
-            background: #31c27c;
+            background: @color;
+            margin-bottom: 10px;
             table {
                 width: 100%;
                 max-width: 1200px;
@@ -93,6 +99,7 @@
                             content: none;
                         }
                         a {
+                            transition: .5s;
                             display: block;
                             width: 100%;
                             height: 100%;
@@ -102,7 +109,7 @@
                             color: white;
                             font-size: 16px;
                             &:hover {
-                                background: #58d89a;
+                                background: @colorHover;
                             }
                         }
                     }
@@ -115,7 +122,7 @@
     }
     @media only screen and (max-width: 680px){
         nav {
-            background: #31c27c;
+            background: @color;
             box-sizing: border-box;
             width: 100%;
             padding: 5px;
@@ -129,7 +136,7 @@
             }
             #menu-btn {
                 outline: none;
-                background: #31c27c;
+                background: none;
                 text-align: center;
                 width: 30px;
                 height: 30px;
