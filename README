@@ -1,1 +1,15 @@
 #等待添加内容
+
+##主页
+### swiper 轮播图组件
+1. 需要从父组件传入的参数  swiperList => Array 
+    1.1 参数详细配置
+        ````swiperList = [{
+            img: "1.jpg",    //必须项,图片路径
+            router: "index",     //可选，图片点击后的路由  默认 => ""
+            title: "信息2"    //可选，图片描述信息 默认 => "轮播图图片"
+        },{
+            img: "2.jpg",   
+            router: "info",    
+            title: "信息3"   
+        }]````

@@ -16,5 +16,9 @@ export default {
         name : "其 他",
         iconClass : "fa fa-suitcase",
         router : "demo3"
-    }]
+    }],
+    // -----------------------------轮播图的配置---------------------------
+    swiper : {
+        interval : 6000 //轮播间隔,单位=>毫秒
+    }
 }

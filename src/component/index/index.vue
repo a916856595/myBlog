@@ -14,8 +14,8 @@
         data (){
             return {
                 swiperList : [{
-                    img: "http://pic.jj20.com/up/allimg/1011/092QG35Z2/1F92Q35Z2-1.jpg",
-                    router: "1",
+                    img: "http://pic.jj20.com/up/allimg/1011/092QG35Z2/1F92Q35Z2-1.jpg", //必要
+                    // router: "1",
                     title: "信息1"
                 },{
                     img: "http://pic.jj20.com/up/allimg/1011/092QG35Z2/1F92Q35Z2-2.jpg",
